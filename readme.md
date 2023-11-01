@@ -1,8 +1,8 @@
 # spire
 
-## (plain old) markdown and pandoc
+TODO -- create repo on byte-glass!
 
-see ~/b/latex
+## (plain old) markdown and pandoc
 
 ## Rmd
 
