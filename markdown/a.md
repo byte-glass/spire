@@ -17,9 +17,11 @@ How does $\pi$ render?
 Note: I had to install a new (?) package from the slew of texlive packages to get the above to work?!
 The arrangement of the packages seems to change fairly frequently.
 
-## `\usepackage{mathtools}`
+## `\usepackage{mathtools}` and `pandoc -H ...`
 
-I found I needed `\usepackage{mathtools}` to get prescripts to work (?), see below. It can be taken care of on the command line. Given a file `mathtools.tex` containing the single line,
+I found I needed `\usepackage{mathtools}` to get prescripts to work (?), see below. 
+
+The directive `\usepackage ...` can't be included in the source file, it needs to be added to a header file and passed to `pandoc` on the command line. Given a file `mathtools.tex` containing the single line,
 
 ```tex
 \usepackage{mathtools}
@@ -69,6 +71,12 @@ whereupon we have $q \in \H$. And
 
 $$ \gamma \from I \to \C $$
 
+## `pandoc -B ...`
+
+Directives such as `\newcommand...` etc can be added to an `--include-before-body` file and passed to `pandoc` on the command line. The file `langland.md` in this directory gives an example of this. 
+
+There is also an `--include-after-body` flag as well; see `pandoc --help`.
+
 ## Lie algebras and Hilbert spaces
 
 `\mathfrak` does the trick for Lie algebras. Let's try `\newcommand{\so}{\mathfrak{so}}`,
@@ -101,7 +109,7 @@ Let $x \from [0, 1] \to \mathbb{R}^2$ be a closed $C^2$ curve, i.e. $x(0) = x(1)
 
 $$ S[x] = \frac{1}{2} \int_0^1 (x^1 \dot{x}^2 − x^2 \dot{x}^1) \, \mathrm{d}t $$
 
-How does this work, the curl or angular momentum term $x^1 \dot{x}^2 − x^2 \dot{x}^1$ and the factor of a half??
+How does this work, the curl or angular momentum term $x^1 \dot{x}^2 − x^2 \dot{x}^1$ and the factor of a half?
 
 
 ### end
