@@ -1,6 +1,4 @@
-# spire
-
-TODO -- create repo on byte-glass!
+# spire -- show it off!
 
 ## (plain old) markdown and pandoc
 
@@ -13,8 +11,6 @@ TODO -- create repo on byte-glass!
 ## Dash.jl
 
 ## Pluto notebooks
-
-
 
 
 ### end
