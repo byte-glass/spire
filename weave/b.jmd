@@ -1,0 +1,8 @@
+# Intro
+
+have a nice day!
+
+```julia
+using Plots
+plot(sin, -3, 3, legend = false)
+```

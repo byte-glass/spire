@@ -1,10 +1,14 @@
 # spire -- show it off!
 
-## (plain old) markdown and pandoc
+## dir. `markdown`
 
-## Rmd
+(plain old) markdown and pandoc
 
 ## Weave.jl
+
+see dir. `weave`
+
+## Rmd
 
 ## shiny
 
