@@ -51,7 +51,7 @@ The make file in this directory (seems) to work as expected.
 
 ## inline code and the header
 
-The file `a.jmd` uses inline code i.e. `j using Dates; print(Dates.format(today(), "U d, Y"))` (in the header no less) to get today's date.
+The file `a.jmd` uses inline code i.e. ``j using Dates; print(Dates.format(today(), "U d, Y"))`` (in the header no less) to get today's date.
 
 ## next steps
  - handling extra arguments to pandoc e.g. `-B maths-extras.tex`, maybe render to pandoc markdown first then call `pandoc` with required arguments
