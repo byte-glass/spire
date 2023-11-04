@@ -9,7 +9,7 @@ date: _`j using Dates; print(Dates.format(today(), "U d, Y"))`_
 
 The Fourier transform of a square wave function $w$ with amplitude $c$ from $-c/2$ to $c/2$ and period $L$ is given by
 
-$$ \hat{w}(x) = \sum_{j=1}^{\infty} \sin (2j - 1) \omega x $$ 
+$$ \hat{w}(x) = \sum_{j=1}^{\infinity} \sin (2j - 1) \omega x $$ 
 
 where $\omega = 2 \pi / L$.
 
