@@ -57,8 +57,11 @@ The file `a.jmd` uses inline code i.e.
 
 in the header no less, to get today's date.
 
+## file `d.jmd`
+
+This short example shows off some formatting i.e. the use of `&nbsp;` to insert some vertical white space and a weave keyword argument `pandoc_options` to pass a `-B` argument to `pandoc`. See also the make file.
+
 ## next steps
- - handling extra arguments to pandoc e.g. `-B maths-extras.tex`, maybe render to pandoc markdown first then call `pandoc` with required arguments
  - styles or themes, in the examples above julia code is rather colourful i.e. _too_ colourful
 
 
