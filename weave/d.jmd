@@ -7,5 +7,5 @@ and $F = dA$ where $A$ is an $\su(2)$-valued form on $M$.
 
 &nbsp;
 
-_Michael Campbell  
+_byte-glass  
 `j using Dates; print(Dates.format(today(), "d U Y"))`_
