@@ -1,27 +1,19 @@
 ---
-title: Simple .jmd file 
-author: awkward crow
-date: 2023-11-03
+title: Gibbs phenomenon
+author: _awkward crow_
+date: _`j using Dates; print(Dates.format(today(), "U d, Y"))`_
 ---
 
 
-# Introduction
-
-Not much to this file. Let $\alpha = 1$.
-
-```julia; echo = false
-a = 1;
-```
-
 ## Fourier transform of a square wave
 
-The Fourier transform of a square wave function $w$ with amplitude $c$ from $-c/2$ to $c/2$ with periodicity $L$ is given by
+The Fourier transform of a square wave function $w$ with amplitude $c$ from $-c/2$ to $c/2$ and period $L$ is given by
 
 $$ \hat{w}(x) = \sum_{j=1}^{\infty} \sin (2j - 1) \omega x $$ 
 
 where $\omega = 2 \pi / L$.
 
-
+Partial sums can be easily defined as follows
 
 ```julia
 function w(x; c = 2, L = 2, k = 3)
@@ -30,13 +22,17 @@ function w(x; c = 2, L = 2, k = 3)
 end;
 ```
 
+and plotted
+
 ```julia
 using Plots
 
 x = range(0, 0.5, length = 500)
 
 plot(x, w.(x), legend = false, tick_direction = :out)
+plot!(x, ones(length(x)), ls = :dot)
 plot!(x, w.(x, k = 5))
 plot!(x, w.(x, k = 9))
 ```
 
+The overshoot of the partial sums is clear.

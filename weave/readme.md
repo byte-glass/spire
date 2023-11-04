@@ -49,8 +49,11 @@ GKSwstype=nul julia -e 'using Weave; weave("a.jmd", doctype="pandoc2pdf")'
 
 The make file in this directory (seems) to work as expected.
 
+## inline code and the header
+
+The file `a.jmd` uses inline code i.e. `\`j using Dates; print(Dates.format(today(), "U d, Y"))\`` (in the header no less) to get today's date.
+
 ## next steps
- - a source file in script syntax (rather than `jmd`)
  - handling extra arguments to pandoc e.g. `-B maths-extras.tex`, maybe render to pandoc markdown first then call `pandoc` with required arguments
  - styles or themes, in the examples above julia code is rather colourful i.e. _too_ colourful
 
