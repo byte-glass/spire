@@ -6,7 +6,7 @@
 	GKSwstype=nul julia -e 'using Weave; weave("$<", doctype = "pandoc2pdf")'
 
 tidy:
-	rm -rf *.tex *.out *.aux *.log figures jl_*
+	rm -rf *.out *.aux *.log figures jl_*
 
 clean: tidy
 	rm -f *.pdf
