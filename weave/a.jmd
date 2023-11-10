@@ -2,7 +2,10 @@
 title: Gibbs phenomenon
 author: _awkward crow_
 date: _`j using Dates; print(Dates.format(today(), "U d, Y"))`_
+weave_options:
+    highlight_theme: nothing
 ---
+
 
 
 ## Fourier transform of a square wave
