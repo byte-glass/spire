@@ -1,4 +1,7 @@
 
+%.md: %.pm
+	pweave $< -f pandoc
+
 %.md: %.py
 	pweave $< -f pandoc
 
