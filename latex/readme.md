@@ -3,9 +3,9 @@
 
 ## inline expressions
 
-As with pandoc markdown, single `$` delimiters give inline expressions e.g. `$A = \pi r^2$` renders $A = \pi r^2$.
+As with pandoc markdown, single `$` delimiters give inline expressions e.g. `$A = \pi r^2$` renders as $A = \pi r^2$.
 
-There is another form using `$\`` and `\`$` delimiters.
+There is another form using `` $` `` and `\`$` delimiters.
 
 ## block expressions
 
@@ -16,12 +16,13 @@ Start a new line and use `$$` delimiters e.g.
 
 which gives the following,
 
+**The Cauchy-Schwarz Inequality**
 $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
 
-Alternatively fence some latex with `\`\`\`math`
+Alternatively fence some latex with `` ```math ``
 
 ```math
-\int_\partial{A} \omega = \int_A d \omega
+\int_{\partial A} \omega = \int_A d \omega
 ```
 
 
