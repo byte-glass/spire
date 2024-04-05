@@ -5,7 +5,7 @@
 
 As with pandoc markdown, single `$` delimiters give inline expressions e.g. `$A = \pi r^2$` renders as $A = \pi r^2$.
 
-There is another form using `` $` `` and `\`$` delimiters.
+There is another form using `` $` `` and `` `$ `` delimiters.
 
 ## block expressions
 
